@@ -1,0 +1,515 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card-section11 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card11 {
+  background-color: #fff;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card11:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img11 {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body11 {
+  padding: 20px;
+}
+
+.card-date11 {
+  background-color: #008000;
+  color: white;
+  padding: 5px 10px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 5px;
+  display: inline-block;
+  align-content: center;
+}
+
+.card-title11 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.card-description11 {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Container styles */
+.appointment-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Button styles */
+.appointment-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-button:hover {
+  background-color: #45a049;
+}
+
+/* Form styles */
+.appointment-form {
+  margin-top: 20px;
+  padding: 20px;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Form heading */
+.appointment-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* Form group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.cancel-button {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+/* Appointment card styles */
+.appointment-card {
+  margin-top: 20px;
+  padding: 20px;
+  width: 250px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-card h3 {
+  margin-bottom: 15px;
+}
+
+.appointment-card p {
+  margin: 8px 0;
+}
+
+.result-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.result-button:hover {
+  background-color: #45a049;
+}
+
+/* Error message styles */
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Main container to hold both the button and appointment cards */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 20px;
+  align-items: center;
+}
+
+/* Show My Appointment button */
+.appointment-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.appointment-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Appointment card */
+.appointment-card {
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-card h3 {
+  margin-bottom: 10px;
+}
+
+.appointment-card p {
+  margin: 8px 0;
+}
+
+.crop-disease-table {
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+strong {
+  color: #333;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
+  .card-section11 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card11 {
+    width: 90%;
+  }
+
+  .appointment-form {
+    width: 90%;
+  }
+
+  .appointment-card {
+    width: 90%;
+  }
+
+  .main-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-section11 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card11 {
+    width: 100%;
+  }
+
+  .appointment-form {
+    width: 100%;
+  }
+
+  .appointment-card {
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .result-button,
+  .submit-button,
+  .appointment-button,
+  .cancel-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .crop-disease-table {
+    width: 100%;
+  }
+
+  table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card11,
+  .appointment-form,
+  .appointment-card,
+  .main-container,
+  .crop-disease-table {
+    width: 100%;
+  }
+
+  .card-img11 {
+    height: 150px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .appointment-form h2 {
+    font-size: 1.2em;
+  }
+
+  .appointment-card p,
+  .card-description11 {
+    font-size: 12px;
+  }
+
+  .result-button,
+  .submit-button,
+  .appointment-button,
+  .cancel-button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  table td {
+    font-size: 12px;
+  }
+}
+
+.insert-data-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+
+.insert-data-table td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.insert-data-table label {
+  font-weight: bold;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.insert-data-table input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.insert-data-table input:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .appointment-form-container {
+    width: 90%;
+  }
+
+  .insert-data-table label {
+    min-width: 120px;
+  }
+  
+  .form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-buttons button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.container123456 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button1234 {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button1234:hover {
+  background-color: #45a049;
+}
+
+.form1234 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+.label1234 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input1234 {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.table1234 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  max-width: 600px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.th1234,
+.td1234 {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.th1234 {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.td1234 {
+  background-color: #fff;
+}
+
+.table1234 button {
+  background-color: #f44336;
+  padding: 5px 10px;
+  font-size: 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.table1234 button:hover {
+  background-color: #d73833;
+}

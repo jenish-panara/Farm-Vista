@@ -1,0 +1,113 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    width: 100%;
+    background-color: #fff;
+    color: #6b6b6b;
+}
+
+.footer-container div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-container h3 {
+    font-size: 18px;
+    color: #8bc34a;
+}
+
+.footer-container p, .footer-container a {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a {
+    color: #6b6b6b;
+    text-decoration: none;
+}
+
+.footer-container ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-container .app img {
+    display: block;
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e1e1;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.fimg{
+    height: 24px;
+    width: 100px;
+}
+
+/* For tablets and smaller laptops (768px and below) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .footer-container div {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .footer-container h3 {
+        font-size: 16px;
+    }
+    .footer-container p, .footer-container a {
+        font-size: 13px;
+    }
+    .footer-bottom {
+        font-size: 11px;
+    }
+    .fimg {
+        width: 80px;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px;
+    }
+    .footer-container div {
+        margin-bottom: 15px;
+    }
+    .footer-container h3 {
+        font-size: 14px;
+    }
+    .footer-container p, .footer-container a {
+        font-size: 12px;
+    }
+    .footer-bottom {
+        font-size: 10px;
+    }
+    .fimg {
+        width: 70px;
+    }
+}
